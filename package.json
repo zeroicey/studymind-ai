@@ -1,0 +1,30 @@
+{
+  "name": "studymind-ai",
+  "version": "1.0.0",
+  "description": "智能学习助手系统 - 实时监控和分析学习行为，提供个性化学习体验",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "db:init": "bun run src/scripts/init-db.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.4.0",
+    "hono": "^4.0.0",
+    "mqtt": "^5.3.5",
+    "mongodb": "^6.3.0",
+    "zod": "^3.22.4",
+    "jsonwebtoken": "^9.0.2",
+    "argon2": "^0.31.2",
+    "dayjs": "^1.11.10",
+    "ws": "^8.16.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/ws": "^8.5.10",
+    "@types/node": "^20.11.19",
+    "@types/jsonwebtoken": "^9.0.5",
+    "typescript": "^5.3.3"
+  }
+}
